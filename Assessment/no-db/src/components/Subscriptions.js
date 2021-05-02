@@ -23,14 +23,20 @@ class Subscriptions extends Component {
         
         
         let mappedSubs = this.props.subsArray.map((sub) => {
-            return(
-                <div>
-                    {sub.image}
+
+                return(
+                    <div>
+                    <img alt={sub.title} src={sub.image}></img>
                     <br></br>
                     {sub.title}
                     <br></br>
                     <button onClick={() => this.minusRating(sub.id, sub.rating)}>-</button>
-                    {" " + sub.rating + " " }
+                
+                    { sub.rating === 1 ? sub.rating + " Star"  : sub.rating + " Stars" }
+
+                    {/* {" " + sub.rating + " Stars " } */}
+
+
                     <button onClick={() => this.plusRating(sub.id, sub.rating)}>+</button>
                     <br></br>
                     <button onClick={() => this.props.unsubscribe(sub.id)}>Unsubscribe</button>

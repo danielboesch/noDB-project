@@ -61,7 +61,7 @@ class PodcastList extends Component {
         let mappedPods = this.state.podArray.map((pod) => {
             return(
                 <div>
-                    {pod.image}
+                    <img alt={pod.title} src={pod.image}></img>
                     <br></br>
                     {pod.title}
                     <br></br>

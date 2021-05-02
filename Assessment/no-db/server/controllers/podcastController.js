@@ -1,7 +1,7 @@
 let podcasts = [
     {
         id: 0,
-        image: 'url 1',
+        image: 'https://cachedimages.podchaser.com/512x512/aHR0cHM6Ly9zc2wtc3RhdGljLmxpYnN5bi5jb20vcC9hc3NldHMvNi9lLzIvZC82ZTJkNzU2N2QwZTRlMjYxL0gzX1BvZGNhc3RfU1FVQVJFX0xPR08uanBlZw%3D%3D/aHR0cHM6Ly93d3cucG9kY2hhc2VyLmNvbS9pbWFnZXMvbWlzc2luZy1pbWFnZS5wbmc%3D',
         title: 'Podcast Name 1',
         description: "description 1",
         rating: 0
@@ -9,7 +9,7 @@ let podcasts = [
     },
     {
         id: 1,
-        image: 'url2',
+        image: 'https://cachedimages.podchaser.com/512x512/aHR0cHM6Ly9zc2wtc3RhdGljLmxpYnN5bi5jb20vcC9hc3NldHMvNi9lLzIvZC82ZTJkNzU2N2QwZTRlMjYxL0gzX1BvZGNhc3RfU1FVQVJFX0xPR08uanBlZw%3D%3D/aHR0cHM6Ly93d3cucG9kY2hhc2VyLmNvbS9pbWFnZXMvbWlzc2luZy1pbWFnZS5wbmc%3D',
         title: 'Podcast Name 2',
         description: "description2 ",
         rating: 0
@@ -17,7 +17,7 @@ let podcasts = [
     },
     {
         id: 2,
-        image: 'url3',
+        image: 'https://cachedimages.podchaser.com/512x512/aHR0cHM6Ly9zc2wtc3RhdGljLmxpYnN5bi5jb20vcC9hc3NldHMvNi9lLzIvZC82ZTJkNzU2N2QwZTRlMjYxL0gzX1BvZGNhc3RfU1FVQVJFX0xPR08uanBlZw%3D%3D/aHR0cHM6Ly93d3cucG9kY2hhc2VyLmNvbS9pbWFnZXMvbWlzc2luZy1pbWFnZS5wbmc%3D',
         title: 'Podcast Name 3',
         description: "description 3",
         rating: 0
@@ -25,7 +25,7 @@ let podcasts = [
     },
     {
         id: 3,
-        image: 'url4',
+        image: 'https://cachedimages.podchaser.com/512x512/aHR0cHM6Ly9zc2wtc3RhdGljLmxpYnN5bi5jb20vcC9hc3NldHMvNi9lLzIvZC82ZTJkNzU2N2QwZTRlMjYxL0gzX1BvZGNhc3RfU1FVQVJFX0xPR08uanBlZw%3D%3D/aHR0cHM6Ly93d3cucG9kY2hhc2VyLmNvbS9pbWFnZXMvbWlzc2luZy1pbWFnZS5wbmc%3D',
         title: 'Podcast Name 4',
         description: "description 4",
         rating: 0
