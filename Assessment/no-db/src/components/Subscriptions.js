@@ -19,7 +19,7 @@ class Subscriptions extends Component {
     }
 
     render(){
-
+        
         
         
         let mappedSubs = this.props.subsArray.map((sub) => {
@@ -30,14 +30,15 @@ class Subscriptions extends Component {
                     <br></br>
                     {sub.title}
                     <br></br>
-                    <button onClick={() => this.minusRating(sub.id, sub.rating)}>-</button>
-                
+                    
+                    <button onClick={() => sub.rating > 0 && sub.rating <= 5 ? this.minusRating(sub.id, sub.rating) 
+                        : console.log('error')}>-</button>
+
                     { sub.rating === 1 ? sub.rating + " Star"  : sub.rating + " Stars" }
 
-                    {/* {" " + sub.rating + " Stars " } */}
+                    <button onClick={() => sub.rating >= 0 && sub.rating < 5 ? this.plusRating(sub.id, sub.rating) 
+                        : console.log('error')}>+</button>
 
-
-                    <button onClick={() => this.plusRating(sub.id, sub.rating)}>+</button>
                     <br></br>
                     <button onClick={() => this.props.unsubscribe(sub.id)}>Unsubscribe</button>
                 </div>
