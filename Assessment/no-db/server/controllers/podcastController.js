@@ -4,7 +4,7 @@ let podcasts = [
         image: 'url 1',
         title: 'Podcast Name 1',
         description: "description 1",
-        rating: "5 stars"
+        rating: 0
 
     },
     {
@@ -12,7 +12,7 @@ let podcasts = [
         image: 'url2',
         title: 'Podcast Name 2',
         description: "description2 ",
-        rating: "4 stars"
+        rating: 0
 
     },
     {
@@ -20,7 +20,7 @@ let podcasts = [
         image: 'url3',
         title: 'Podcast Name 3',
         description: "description 3",
-        rating: "3 stars"
+        rating: 0
 
     },
     {
@@ -28,7 +28,7 @@ let podcasts = [
         image: 'url4',
         title: 'Podcast Name 4',
         description: "description 4",
-        rating: "2 stars"
+        rating: 0
 
     }
 ]
@@ -63,7 +63,7 @@ module.exports = {
         subscriptions.splice(index, 1)
         res.status(200).send(subscriptions)
     },
-    editTitle: (req, res) => {
+    editRating: (req, res) => {
         const {id} = req.params
         const {rating} = req.body
         const index = subscriptions.findIndex((e) => {

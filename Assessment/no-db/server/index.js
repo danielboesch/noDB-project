@@ -18,7 +18,7 @@ app.delete('/api/podcasts/:id', podCtrl.unsubscribe)
 
 
 //edit
-app.put('/api/subscriptions/:id', podCtrl.editTitle)
+app.put('/api/subscriptions/:id', podCtrl.editRating)
 
 
 

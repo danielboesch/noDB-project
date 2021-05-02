@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, {Component} from 'react'
+import Subscriptions from './Subscriptions'
 
 class PodcastList extends Component {
     constructor(props){
@@ -26,7 +27,7 @@ class PodcastList extends Component {
         .catch((error) => {
             console.log(error)
         })
-    }
+    } 
 
     unsubscribe = (id) => {
         axios.delete(`/api/podcasts/${id}`)
@@ -37,8 +38,17 @@ class PodcastList extends Component {
             console.log(error)
         })
     }
-    subscribe = (title) => {
-        axios.post(`/api/podcasts/`, {title})
+    subscribe = (image, title, rating) => {
+        axios.post(`/api/podcasts/`, {image, title, rating})
+        .then((res) => {
+            this.setState({subsArray: res.data})
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+    }
+    editRating = (id, rating) => {
+        axios.put(`/api/subscriptions/${id}`, {rating})
         .then((res) => {
             this.setState({subsArray: res.data})
         })
@@ -51,17 +61,14 @@ class PodcastList extends Component {
         let mappedPods = this.state.podArray.map((pod) => {
             return(
                 <div>
+                    {pod.image}
+                    <br></br>
                     {pod.title}
-                    <button onClick={() => this.subscribe(pod.title)}>subscribe</button>
+                    <br></br>
+                    {pod.description}
+                    <br></br>
+                    <button onClick={() => this.subscribe(pod.image, pod.title, pod.rating)}>Subscribe</button>
 
-                </div>
-            )
-        })
-        let mappedSubs = this.state.subsArray.map((sub) => {
-            return(
-                <div>
-                    {sub.title}
-                    <button onClick={() => this.unsubscribe(sub.id)}>Unsubscribe</button>
                 </div>
             )
         })
@@ -69,8 +76,13 @@ class PodcastList extends Component {
         console.log(this.state.podArray)
         return(
             <div>
-                {mappedPods}
-                {mappedSubs}
+                <h1>Podcasts</h1>
+                <p>{mappedPods}</p>
+                <Subscriptions 
+                unsubscribe={this.unsubscribe} 
+                subsArray={this.state.subsArray} 
+                editRating={this.editRating}
+                />
             </div>
         )
     }
