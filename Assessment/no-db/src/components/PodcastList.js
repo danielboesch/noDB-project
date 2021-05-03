@@ -1,6 +1,9 @@
 import axios from 'axios';
 import React, {Component} from 'react'
 import Subscriptions from './Subscriptions'
+import Genres from './Genres'
+
+
 
 class PodcastList extends Component {
     constructor(props){
@@ -61,14 +64,18 @@ class PodcastList extends Component {
         let mappedPods = this.state.podArray.map((pod) => {
             return(
                 <div>
+                
+                <div className="mappedPodArr">
                     <img alt={pod.title} src={pod.image}></img>
                     <br></br>
                     {pod.title}
                     <br></br>
                     {pod.description}
                     <br></br>
-                    <button onClick={() => this.subscribe(pod.image, pod.title, pod.rating)}>Subscribe</button>
+                    <button className="mappedPodButtons" onClick={() => this.subscribe(pod.image, pod.title, pod.rating)}><b>Subscribe</b></button>
+                    
 
+                </div>
                 </div>
             )
         })
@@ -76,13 +83,21 @@ class PodcastList extends Component {
         console.log(this.state.podArray)
         return(
             <div>
-                <h1>Podcasts</h1>
-                <p>{mappedPods}</p>
-                <Subscriptions 
-                unsubscribe={this.unsubscribe} 
-                subsArray={this.state.subsArray} 
-                editRating={this.editRating}
-                />
+                <section className="outerBox">
+                    <section className="genres">
+                        <Genres subsArray={this.state.subsArray} />
+                    </section>
+                    <section className="podsBox">
+                        <p className="podArr">{mappedPods}</p>
+                    </section>
+                    <section className="subsBox">
+                        <Subscriptions 
+                        unsubscribe={this.unsubscribe} 
+                        subsArray={this.state.subsArray} 
+                        editRating={this.editRating}
+                        />
+                    </section>
+                </section>
             </div>
         )
     }
