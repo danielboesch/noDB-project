@@ -3,7 +3,7 @@ let podcasts = [
         id: 0,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 1',
-        description: "description 1",
+        description: "Crime",
         genre: 'crime',
         rating: 0
 
@@ -36,7 +36,7 @@ let podcasts = [
 
     },
     {
-        id: 0,
+        id: 4,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 5',
         description: "description 5",
@@ -45,7 +45,7 @@ let podcasts = [
 
     },
     {
-        id: 1,
+        id: 5,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 6',
         description: "description6 ",
@@ -54,7 +54,7 @@ let podcasts = [
 
     },
     {
-        id: 2,
+        id: 6,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 7',
         description: "description 7",
@@ -63,7 +63,7 @@ let podcasts = [
 
     },
     {
-        id: 3,
+        id: 7,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 8',
         description: "description 8",
@@ -72,7 +72,7 @@ let podcasts = [
 
     },
     {
-        id: 0,
+        id: 8,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 1',
         description: "description 1",
@@ -81,7 +81,7 @@ let podcasts = [
 
     },
     {
-        id: 1,
+        id: 9,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 2',
         description: "description2 ",
@@ -90,7 +90,7 @@ let podcasts = [
 
     },
     {
-        id: 2,
+        id: 10,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 3',
         description: "description 3",
@@ -99,7 +99,7 @@ let podcasts = [
 
     },
     {
-        id: 3,
+        id: 11,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 4',
         description: "description 4",
@@ -108,7 +108,7 @@ let podcasts = [
 
     },
     {
-        id: 0,
+        id: 12,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 5',
         description: "description 5",
@@ -117,7 +117,7 @@ let podcasts = [
 
     },
     {
-        id: 1,
+        id: 13,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 6',
         description: "description6 ",
@@ -126,7 +126,7 @@ let podcasts = [
 
     },
     {
-        id: 2,
+        id: 14,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 7',
         description: "description 7",
@@ -135,7 +135,7 @@ let podcasts = [
 
     },
     {
-        id: 3,
+        id: 15,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 8',
         description: "description 8",
@@ -144,7 +144,7 @@ let podcasts = [
 
     },
     {
-        id: 0,
+        id: 16,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 1',
         description: "description 1",
@@ -153,7 +153,7 @@ let podcasts = [
 
     },
     {
-        id: 1,
+        id: 17,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 2',
         description: "description2 ",
@@ -162,7 +162,7 @@ let podcasts = [
 
     },
     {
-        id: 2,
+        id: 18,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 3',
         description: "description 3",
@@ -171,7 +171,7 @@ let podcasts = [
 
     },
     {
-        id: 3,
+        id: 19,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 4',
         description: "description 4",
@@ -180,7 +180,7 @@ let podcasts = [
 
     },
     {
-        id: 0,
+        id: 20,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 5',
         description: "description 5",
@@ -189,7 +189,7 @@ let podcasts = [
 
     },
     {
-        id: 1,
+        id: 21,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 6',
         description: "description6 ",
@@ -198,7 +198,7 @@ let podcasts = [
 
     },
     {
-        id: 2,
+        id: 22,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 7',
         description: "description 7",
@@ -207,7 +207,7 @@ let podcasts = [
 
     },
     {
-        id: 3,
+        id: 23,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 8',
         description: "description 8",
@@ -216,7 +216,7 @@ let podcasts = [
 
     },
     {
-        id: 0,
+        id: 24,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 1',
         description: "description 1",
@@ -225,7 +225,7 @@ let podcasts = [
 
     },
     {
-        id: 1,
+        id: 25,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 2',
         description: "description2 ",
@@ -234,7 +234,7 @@ let podcasts = [
 
     },
     {
-        id: 2,
+        id: 26,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 3',
         description: "description 3",
@@ -243,7 +243,7 @@ let podcasts = [
 
     },
     {
-        id: 3,
+        id: 27,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 4',
         description: "description 4",
@@ -252,7 +252,7 @@ let podcasts = [
 
     },
     {
-        id: 0,
+        id: 28,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 5',
         description: "description 5",
@@ -261,20 +261,11 @@ let podcasts = [
 
     },
     {
-        id: 1,
+        id: 29,
         image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
         title: 'Podcast Name 6',
         description: "description6 ",
         genre: 'crime',
-        rating: 0
-
-    },
-    {
-        id: 2,
-        image: 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
-        title: 'Podcast Name 7',
-        description: "description 7",
-        genre: '',
         rating: 0
 
     },

@@ -67,12 +67,15 @@ class PodcastList extends Component {
                 
                 <div className="mappedPodArr">
                     <img alt={pod.title} src={pod.image}></img>
+
+                    <div className="mappedPodArrTitleDesc">
                     <br></br>
                     {pod.title}
                     <br></br>
                     {pod.description}
                     <br></br>
                     <button className="mappedPodButtons" onClick={() => this.subscribe(pod.image, pod.title, pod.rating)}><b>Subscribe</b></button>
+                    </div>
                     
 
                 </div>
