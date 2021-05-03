@@ -8,40 +8,58 @@ class Subscriptions extends Component {
 
 
     minusRating(id, val){
-        let newNum = (val - 1)
-        this.props.editRating(id, newNum)
+        let newNum = val.length - 1
+        let stars = ""
+        
+       if(newNum === 1){
+            stars = "★"
+        }if(newNum === 2){
+            stars = "★★"
+        }if(newNum === 3){
+            stars = "★★★"
+        }if(newNum === 4){
+            stars = "★★★★"
+        }if(newNum === 5){
+            stars = "★★★★★"
+        }
+        
+        
+        
+        this.props.editRating(id, stars)
         
     }
     plusRating(id, val){
-        let newNum = (val + 1)
+        let newNum = (val += ("★"))
+        
         this.props.editRating(id, newNum)
         
     }
 
     render(){
         
-        
+        // console.log(this.props.subsArray)
         
         let mappedSubs = this.props.subsArray.map((sub) => {
 
                 return(
                     <div className="mappedSubArr">
-                    <img alt={sub.title} src={sub.image}></img>
-                    <br></br>
                     {sub.title}
                     <br></br>
+                    <img className="mappedSubImg" alt={sub.title} src={sub.image}></img>
+                    <br></br>
+                    {console.log(sub.Stars)}
 
-                    <button className="plusMinusButtons"  onClick={() => sub.rating > 0 && sub.rating <= 5 ? this.minusRating(sub.id, sub.rating) 
+                    <button className="plusMinusButtons"  onClick={() => sub.rating.length - 1 > 0 && sub.rating.length - 1 <= 5 ? this.minusRating(sub.id, sub.rating) 
                         : console.log('error')}><b>⬇</b></button>
 
-                    { sub.rating === 1 ? sub.rating + " Star"  : sub.rating + " Stars" }
+                    { sub.rating }
 
-                    <button className="plusMinusButtons"  onClick={() => sub.rating >= 0 && sub.rating < 5 ? this.plusRating(sub.id, sub.rating) 
+                    <button className="plusMinusButtons"  onClick={() => sub.rating.length - 1 >= 0 && sub.rating.length - 1 < 4 ? this.plusRating(sub.id, sub.rating) 
                         : console.log('error')}><b>⬆</b></button>
 
                     <br></br>
                     <br></br>
-                    <button className="mappedSubButtons" onClick={() => this.props.unsubscribe(sub.id)}><b>Unsubscribe</b></button>
+                    <button className="mappedSubButtons" onClick={() => this.props.unsubscribe(sub)}><b>Unsubscribe</b></button>
                 </div>
             )
         })

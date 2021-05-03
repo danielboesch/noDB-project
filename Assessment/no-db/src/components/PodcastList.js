@@ -32,19 +32,33 @@ class PodcastList extends Component {
         })
     } 
 
-    unsubscribe = (id) => {
-        axios.delete(`/api/podcasts/${id}`)
+    unsubscribe = (sub) => {
+        axios.delete(`/api/podcasts/${sub.id}`)
         .then((res) => {
+
+                    this.state.podArray.unshift(sub)
+            
+
+
             this.setState({subsArray: res.data})
         })
         .catch((error) => {
             console.log(error)
         })
     }
-    subscribe = (image, title, rating) => {
-        axios.post(`/api/podcasts/`, {image, title, rating})
+    subscribe = (image, title, rating, stars, description) => {
+        axios.post(`/api/podcasts/`, {image, title, rating,  stars, description})
         .then((res) => {
+
+
+            for (let i = 0; i < this.state.podArray.length; i++ ){
+                if (this.state.podArray[i].title === title){
+                    this.state.podArray.splice(i, 1)
+                }
+            }
+        
             this.setState({subsArray: res.data})
+            
         })
         .catch((error) => {
             console.log(error)
@@ -88,7 +102,7 @@ class PodcastList extends Component {
             <div>
                 <section className="outerBox">
                     <section className="genres">
-                        <Genres subsArray={this.state.subsArray} />
+                        <Genres genreSubsArray={this.state.subsArray} />
                     </section>
                     <section className="podsBox">
                         <p className="podArr">{mappedPods}</p>
