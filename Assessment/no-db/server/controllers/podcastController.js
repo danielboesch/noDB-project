@@ -140,7 +140,7 @@ let podcasts = [
         title: 'Podcast Name 16',
         description: "description 8",
         genre: '',
-        rating: "★"
+        rating: "★`"
 
     },
     {

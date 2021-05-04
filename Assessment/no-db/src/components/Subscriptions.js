@@ -49,13 +49,13 @@ class Subscriptions extends Component {
                     <br></br>
                     {console.log(sub.Stars)}
 
-                    <button className="plusMinusButtons"  onClick={() => sub.rating.length - 1 > 0 && sub.rating.length - 1 <= 5 ? this.minusRating(sub.id, sub.rating) 
-                        : console.log('error')}><b>⬇</b></button>
-
-                    { sub.rating }
 
                     <button className="plusMinusButtons"  onClick={() => sub.rating.length - 1 >= 0 && sub.rating.length - 1 < 4 ? this.plusRating(sub.id, sub.rating) 
                         : console.log('error')}><b>⬆</b></button>
+                        { sub.rating }
+                        <button className="plusMinusButtons"  onClick={() => sub.rating.length - 1 > 0 && sub.rating.length - 1 <= 5 ? this.minusRating(sub.id, sub.rating) 
+                            : console.log('error')}><b>⬇</b></button>
+    
 
                     <br></br>
                     <br></br>

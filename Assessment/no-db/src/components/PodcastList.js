@@ -56,7 +56,7 @@ class PodcastList extends Component {
                     this.state.podArray.splice(i, 1)
                 }
             }
-        
+    
             this.setState({subsArray: res.data})
             
         })
@@ -91,7 +91,7 @@ class PodcastList extends Component {
                     <button className="mappedPodButtons" onClick={() => this.subscribe(pod.image, pod.title, pod.rating)}><b>Subscribe</b></button>
                     </div>
                     
-
+                   
                 </div>
                 </div>
             )

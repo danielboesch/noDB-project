@@ -1,9 +1,24 @@
+/* colors
+ black rgb(55, 55, 55); 
+ purple rgb(128, 109, 212)
+ pink rgb(241, 134, 170) */
+
+
+
+
+
+
 .App {
   text-align: center;
 }
 
+h1{
+  font-family: 'momcake';
+  font-size: 30px;
+}
+
 .header {
-  background-color: rgb(50, 35, 85);
+  /* background-color: rgb(50, 35, 85); */
   /* opacity: 80%; */
   height: 80px;
   display: flex;
@@ -19,10 +34,13 @@
   align-items: center;
   justify-content: space-evenly;
   margin-left: 25px;
+  
 }
 
 .headerInput > input {
-  border-radius: 25px;
+  border-radius: 4px;
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.466);
   width: 300px;
   height: 20px;
 }
@@ -30,36 +48,146 @@
   border-radius: 25px;
   width: 30px;
   height: 30px;
+  
+  background-color: rgba(91, 222, 255, 0.856);
+  border-color: rgba(0, 0, 0, 0.404);
 
 }
 
+.headerInput > button:hover {
+  transition-duration: 250ms;
+  background-color: rgba(255, 225, 91, 0.856);
+  cursor:pointer;
+
+}
 .headerBox2 {
-  background-color: teal;
+  /* background-color: teal; */
   width: 400px;
   height: 100%;
-
-
-}
-.headerBox3 {
-  background-color: tomato;
-  width: 100px;
-  height: 100%;
-
-}
-.headerBox2And3 {
-  background-color: rgb(71, 255, 95);
-  width: 800px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+
+}
+
+.headerLinks {
+  display: flex;
+  list-style-type: none;
+  margin-top: 60px;
+
+}
+
+.headerLinks > li:hover {
+  transition-duration: 302ms;
+  color: rgb(241, 134, 170);
+  font-size: 26px;
+  cursor:pointer;
+
+
+}
+.headerLinks > li:active {
+  color: rgb(128, 109, 212);
+  cursor:pointer;
+
+}
+
+
+
+.feet {
+
+  display: flex;
+  position: relative;
+  align-items: center;
+  left: -9%;
+  list-style: none;
+  font-size: 14px;
+  font-family: 'momcake';
+  
+  /* 
+  display: flex;
+  list-style-type: none;
+  justify-content: center; */
+}
+
+.footerLink1, .footerLink2, .footerLink3, .footerLink4, .footerLink5, .footerLink6  {
+  color: rgb(164, 234, 255);
+  text-decoration: none;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.copyright {
+  width: 105px;
+  height: 30px;
+  /* background-color: violet; */
+  font-size: 14px;
+  font-family: 'momcake';
+  margin-top: 13px;
+  color: rgb(201, 201, 201);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+.headerLinks > li {
+  margin-right: 45px;
+  display: flex;
+  color: rgb(128, 109, 212);
+  font-size: 28px;
+  font-family: 'momcake';
+  /* text-shadow: rgba(0, 0, 0, 0.253) -2px -2px 15px,  rgba(0, 0, 0, 0.253) 2px 2px 15px; */
+  
+}
+.footerLinks > li {
+
+  width: 600px;
+  height: 30px;
+
+
+  /* margin-right: 65px;
+  display: flex;
+  color: white;
+  font-size: 17px;
+   */
+}
+
+
+
+.headerBox3 {
+  /* background-color: tomato; */
+  width: 90px;
+  margin-left: 30px;
+
+}
+
+.headerBox3 > img {
+  border-radius: 50%;
+  width: 150%;
+  
+}
+
+.headerBox2And3 {
+  /* background-color: rgb(71, 255, 95); */
+  width: 700px;
+  display: flex;
+  justify-content: flex-start
 }
 
 
 footer {
-  background-color: rgb(255, 196, 0);
-  position: absolute;
-  bottom: 0;
+
   width: 100%;
-  height: 40px;   
+  height: 55px;
+  background-color: rgb(55, 55, 55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0
 
 }
 
@@ -68,7 +196,9 @@ img {
 }
 
 .outerBox {
-  background-color: rgb(14, 68, 0);
+  background: url('https://64.media.tumblr.com/6448087d0cca756e8162e531b1c75f19/0d074060fcb41fdc-f4/s2048x3072/982f46b7d031b9bc2a6cfe4dae3b871433cab7f5.png');
+  background-size: cover;
+  /* background-color: rgb(14, 68, 0); */
   display: flex;
   width: 100%;
   height: 100vh;
@@ -97,31 +227,68 @@ img {
   width: 150px;
   height: 40px;
   border-radius: 10px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'momcake';
+  font-size: 20px;
 }
 
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
 .podsBox{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: rgb(139, 74, 74);
+  background-color: rgb(125, 127, 155);
+  /* background-color: rgba(128, 109, 212); */
+  /* border-radius: 25px; */
   width: 60vw;
   height: 60%;
+  border: rgb(55, 55, 55) 5px solid;
+  box-shadow: rgba(0, 0, 0, 0.308) 10px 10px 10px;
+  border-radius: 50px 0px 0px 50px;
+  z-index: 5;
+
+
 
 }
 .podArr{
-  background-color: rgb(197, 179, 20);
+  /* background-color: rgb(197, 179, 20); */
   display: flex;
   height: 100%;
   justify-content: space-evenly;
   overflow:auto;
+  border-radius: 50px 0px 0px 50px;
 
 
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 }
+
+.mappedPodButtons:hover {
+  transition-duration: 250ms;
+  color: black;
+  background-color: transparent;
+  cursor:pointer;
+
+}
+.mappedPodButtons:active {
+  transition-duration: 250ms;
+  cursor:grabbing;
+
+}
+.mappedSubButtons:hover {
+  transition-duration: 250ms;
+  color: black;
+  background-color: transparent;
+  cursor:pointer;
+
+}
+
 
 .mappedPodArr {
   margin-top: 15px;
@@ -133,6 +300,7 @@ img {
   /* height: 255px; */
   display: flex;
   justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 5px;
 }
 
 
@@ -141,8 +309,8 @@ img {
 .mappedSubArr {
   margin-bottom: 15px;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 5%;
+  background-color: rgba(255, 255, 255, 0.753);
+  /* border-radius: 5%; */
   width: 175px;
   height: 215px;
   box-shadow: rgba(59, 59, 59, 0.253) 5px 5px 20px;
@@ -156,35 +324,52 @@ img {
 
 .mappedPodButtons {
   margin-top: 10px;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 27px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'momcake';
+  font-size: 20px;
+  background: rgb(253, 127, 169);
+  color: white
+
+
   
 }
 .mappedSubButtons {
   margin-top: -5px;
   margin-bottom: 15px;
-  border-radius: 25px;
+  border-radius: 5px;
   height: 27px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'momcake';
+  font-size: 20px;
   background-color: rgba(255, 255, 255, 0.753);
   /* color: white; */
   width: 150px;
+  background: rgb(146, 151, 221);
+  color: white
+
   
 }
 .plusMinusButtons {
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: -5px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
 }
 
 .subsBox {
-  background-color: rgb(211, 58, 165);
+  background-color: rgb(241, 134, 170);
   display: flex;
   height: 60%;
   width: 18.5vw;
   justify-content: center;
   overflow:auto;
+  border: rgb(55, 55, 55) 5px solid;
+  box-shadow: rgba(0, 0, 0, 0.308) 10px 10px 10px;
+  border-radius: 0px 50px 50px 0px;
+  z-index: 5;
+  direction: rtl;
+  
 }
+
+
+
