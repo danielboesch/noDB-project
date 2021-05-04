@@ -28,10 +28,10 @@ let podcasts = [
     },
     {
         id: 3,
-        image: 'https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/TCF6YA53ZYZF7LFUCMYP6N7D34.jpg',
-        title: 'RetroPod',
+        image: 'https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo400/574613/574613-1535540246585-eefeae88b9113.jpg',
+        title: 'a24 Podcast',
         description: "Pop Culture",
-        genre: 'crime',
+        genre: '',
         rating: "★"
 
 
@@ -101,11 +101,12 @@ let podcasts = [
     },
     {
         id: 11,
-        image: 'https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo400/574613/574613-1535540246585-eefeae88b9113.jpg',
-        title: 'a24 Podcast',
+        image: 'https://cdn-images.podbay.fm/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3NzbC1zdGF0aWMubGlic3luLmNvbS9wL2Fzc2V0cy9mL2EvYy9jL2ZhY2MxM2FkY2Y2MDAxZWQvMTQwMF9ieV8xNDAwX3B4LnBuZyIsImZhbGxiYWNrIjoiaHR0cHM6Ly9pczEtc3NsLm16c3RhdGljLmNvbS9pbWFnZS90aHVtYi9NdXNpYzEyMy92NC81MS9jOC8yYS81MWM4MmExZS0wMGE1LTFmMTAtNmM1OS1kNjFlMTUyOGQ0NWEvc291cmNlLzYwMHg2MDBiYi5qcGcifQ.EIUC8Ro4QUoBNpTCGD7v75mPzHrew3ASAFSU5lVrws0.jpg?width=400&height=400',
+        title: 'Book vs Movie',
         description: "Pop Culture",
-        genre: '',
+        genre: 'crime',
         rating: "★"
+
 
     },
     {

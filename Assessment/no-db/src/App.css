@@ -113,12 +113,15 @@ h1{
   justify-content: center; */
 }
 
+
+
 .footerLink1, .footerLink2, .footerLink3, .footerLink4, .footerLink5, .footerLink6  {
   color: rgb(164, 234, 255);
   text-decoration: none;
   margin-right: 15px;
   margin-top: 5px;
 }
+
 
 .copyright {
   width: 105px;
