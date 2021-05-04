@@ -80,7 +80,9 @@ class PodcastList extends Component {
     filterGenre = (genre) => {
         
         this.setState({filterArr: this.state.podArray.filter(pod => {
-            return pod.description.toLowerCase() === genre
+            if(genre === 'reset'){
+                return this.state.podArray
+            } else return pod.description.toLowerCase() === genre
             }
         )})
     }

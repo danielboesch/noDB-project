@@ -15,8 +15,9 @@
 h1{
   font-family: 'momcake';
   font-size: 30px;
-  border-bottom: black 4px solid;
+  border-bottom: rgb(66, 66, 66) 4px solid;
   padding-bottom: 2px;
+  color: rgb(55, 55, 55);
 }
 
 .header {
@@ -51,7 +52,7 @@ h1{
   width: 30px;
   height: 30px;
   
-  background-color: rgba(255, 211, 91, 0.856);
+  background-color: rgb(255, 221, 128);
   border-color: rgba(0, 0, 0, 0.404);
 
 }
@@ -210,13 +211,34 @@ img {
   
 }
 .genres {
-  background-color: salmon;
+  background-color: rgb(255, 150, 138);
   display: flex;
-  flex-direction: column;
-  height: 265px;
-  width: 150px;
-  justify-content: flex-start;
-  margin-bottom: 160px ;
+  height: 320px;
+  width: 170px;
+  justify-content: center;
+  border: rgb(55, 55, 55) 5px solid;
+  box-shadow: rgba(0, 0, 0, 0.308) 10px 10px 10px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.buttonReset {
+  margin-top: -15px;
+  background: rgb(255, 243, 216);
+}
+.buttonGenre {
+  background: rgb(255, 224, 137);
+}
+
+.buttonGenre:hover {
+  transition-duration: 250ms;
+  background-color: rgb(255, 202, 55);
+  cursor: pointer;
+}
+.buttonReset:hover {
+  transition-duration: 250ms;
+  background-color: rgb(240, 225, 192);
+  cursor: pointer;
 }
 
 .topics {
@@ -231,7 +253,7 @@ img {
   height: 40px;
   border-radius: 10px;
   font-family: 'momcake';
-  font-size: 20px;
+  font-size: 22px;
 }
 
 
@@ -306,11 +328,11 @@ img {
 .mappedSubArr {
   margin-bottom: 15px;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.753);
+  background-color: rgb(255, 255, 255);
   /* border-radius: 5%; */
-  width: 175px;
-  height: 215px;
-  box-shadow: rgba(59, 59, 59, 0.253) 5px 5px 20px;
+  width: 160px;
+  height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 5px;
 
 }
 
@@ -318,6 +340,11 @@ img {
   margin-top: 10px;
   margin-bottom: 5px;
 }
+
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
 
 .mappedPodButtons {
   margin-top: 10px;
@@ -351,6 +378,11 @@ img {
   margin-right: 5px;
   margin-bottom: -5px;
   
+}
+
+.plusMinusButtons:hover {
+  transition-duration: 250ms;
+  cursor: pointer;
 }
 
 .subsBox {
