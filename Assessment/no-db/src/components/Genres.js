@@ -29,6 +29,7 @@ class Genres extends Component {
                 <button className="buttonGenre" onClick={() => this.props.filterArray("crime")}><b>Crime</b></button>
                 <button className="buttonGenre" onClick={() => this.props.filterArray("pop culture")}><b>Pop Culture</b></button>
                 <button className="buttonGenre" onClick={() => this.props.filterArray("news")}><b>News</b></button>
+                <button className="buttonGenre" onClick={() => this.props.filterArray("comedy")}><b>Comedy</b></button>
                 <button className="buttonGenre" onClick={() => this.props.filterArray("lifestyle")}><b>Lifestyle</b></button>
 
 

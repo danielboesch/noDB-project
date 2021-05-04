@@ -20,6 +20,11 @@ h1{
   color: rgb(55, 55, 55);
 }
 
+.subH1 {
+  width: 180px;
+}
+
+
 .header {
   /* background-color: rgb(50, 35, 85); */
   /* opacity: 80%; */
@@ -220,7 +225,7 @@ img {
 .genres {
   background-color: rgb(255, 150, 138);
   display: flex;
-  height: 340px;
+  height: 370px;
   width: 170px;
   justify-content: center;
   border: rgb(55, 55, 55) 5px solid;

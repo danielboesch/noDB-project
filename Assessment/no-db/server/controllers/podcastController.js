@@ -75,7 +75,7 @@ let podcasts = [
     {
         id: 8,
         image: 'https://m.media-amazon.com/images/I/51rfyPndSSL._SL500_.jpg',
-        title: 'But Outside',
+        title: 'Podcast  But Outside',
         description: "Comedy",
         genre: 'crime',
         rating: "★"

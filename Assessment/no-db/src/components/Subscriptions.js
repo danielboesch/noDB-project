@@ -70,7 +70,7 @@ class Subscriptions extends Component {
         
         return(
             <div>
-                <h1>Subscriptions</h1>
+                <h1 className='subH1'>Subscriptions</h1>
                     {mappedSubs}
             </div>
                 

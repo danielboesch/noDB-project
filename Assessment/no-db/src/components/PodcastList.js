@@ -89,9 +89,9 @@ class PodcastList extends Component {
 
     handleClick = () => {
         let input = this.state.input
-
         this.setState({filterArr: this.state.podArray.filter(pod => {
-            return pod.title.includes(input) || pod.description.includes(input) 
+            this.setState({filterArr: []})
+            return pod.title.toLowerCase().includes(input) || pod.description.toLowerCase().includes(input) 
             }
         )})
         
