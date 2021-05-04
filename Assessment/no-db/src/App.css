@@ -15,6 +15,8 @@
 h1{
   font-family: 'momcake';
   font-size: 30px;
+  border-bottom: black 4px solid;
+  padding-bottom: 2px;
 }
 
 .header {
@@ -49,14 +51,14 @@ h1{
   width: 30px;
   height: 30px;
   
-  background-color: rgba(91, 222, 255, 0.856);
+  background-color: rgba(255, 211, 91, 0.856);
   border-color: rgba(0, 0, 0, 0.404);
 
 }
 
 .headerInput > button:hover {
   transition-duration: 250ms;
-  background-color: rgba(255, 225, 91, 0.856);
+  background-color: rgb(255, 187, 0);
   cursor:pointer;
 
 }
@@ -140,6 +142,7 @@ h1{
   font-size: 28px;
   font-family: 'momcake';
   /* text-shadow: rgba(0, 0, 0, 0.253) -2px -2px 15px,  rgba(0, 0, 0, 0.253) 2px 2px 15px; */
+  /* border-bottom: 1.5px black solid; */
   
 }
 .footerLinks > li {
@@ -192,7 +195,7 @@ footer {
 }
 
 img {
-  width: 120px;
+  width: 100px;
 }
 
 .outerBox {
@@ -271,20 +274,14 @@ img {
 
 .mappedPodButtons:hover {
   transition-duration: 250ms;
-  color: black;
-  background-color: transparent;
-  cursor:pointer;
+  background-color: rgb(255, 75, 120);
+  cursor: pointer;
 
 }
-.mappedPodButtons:active {
-  transition-duration: 250ms;
-  cursor:grabbing;
 
-}
 .mappedSubButtons:hover {
   transition-duration: 250ms;
-  color: black;
-  background-color: transparent;
+  background-color: rgb(113, 120, 221);
   cursor:pointer;
 
 }
@@ -296,7 +293,7 @@ img {
   margin-right: 15px;
   padding: 10px;
   background-color: white;
-  width: 95%;
+  width: 85%;
   /* height: 255px; */
   display: flex;
   justify-content: space-around;
@@ -370,6 +367,4 @@ img {
   direction: rtl;
   
 }
-
-
 

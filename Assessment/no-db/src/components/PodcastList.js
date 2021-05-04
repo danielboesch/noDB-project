@@ -10,13 +10,16 @@ class PodcastList extends Component {
         super(props);
         this.state = {
             podArray: [],
-            subsArray: []
+            subsArray: [],
+            filterArr: [],
+            input: '',
         }
     }
 
     componentDidMount(){
         axios.get('/api/podcasts')
         .then((res) => {
+            
             this.setState({podArray: res.data})
         })
         .catch((error) => {
@@ -46,8 +49,8 @@ class PodcastList extends Component {
             console.log(error)
         })
     }
-    subscribe = (image, title, rating, stars, description) => {
-        axios.post(`/api/podcasts/`, {image, title, rating,  stars, description})
+    subscribe = (image, title, rating, description) => {
+        axios.post(`/api/podcasts/`, {image, title, rating, description})
         .then((res) => {
 
 
@@ -74,8 +77,30 @@ class PodcastList extends Component {
         })
     }
 
+    filterGenre = (genre) => {
+        
+        this.setState({filterArr: this.state.podArray.filter(pod => {
+            return pod.description.toLowerCase() === genre
+            }
+        )})
+    }
+
+    handleClick = () => {
+        let input = this.state.input
+
+        this.setState({filterArr: this.state.podArray.filter(pod => {
+            return pod.title.includes(input) || pod.description.includes(input) 
+            }
+        )})
+        
+    }
+
+
+
+
     render(){
-        let mappedPods = this.state.podArray.map((pod) => {
+        const podsList = this.state.filterArr.length ? this.state.filterArr : this.state.podArray
+        let mappedPods = podsList.map((pod) => {
             return(
                 <div>
                 
@@ -88,7 +113,7 @@ class PodcastList extends Component {
                     <br></br>
                     {pod.description}
                     <br></br>
-                    <button className="mappedPodButtons" onClick={() => this.subscribe(pod.image, pod.title, pod.rating)}><b>Subscribe</b></button>
+                    <button className="mappedPodButtons" onClick={() => this.subscribe(pod.image, pod.title, pod.rating, pod.description)}><b>Subscribe</b></button>
                     </div>
                     
                    
@@ -100,9 +125,16 @@ class PodcastList extends Component {
         console.log(this.state.podArray)
         return(
             <div>
+                <div className="header headerInput">
+                <input onChange={(e) => this.setState({input: e.target.value})}  placeholder='  Search...'></input>
+                    <button onClick={() => this.handleClick()} >➤</button>
+                </div>
                 <section className="outerBox">
                     <section className="genres">
-                        <Genres genreSubsArray={this.state.subsArray} />
+                        <Genres 
+                        genrePodArray={this.state.podArray} 
+                        filterArray={this.filterGenre}
+                        />
                     </section>
                     <section className="podsBox">
                         <p className="podArr">{mappedPods}</p>
@@ -113,6 +145,7 @@ class PodcastList extends Component {
                         subsArray={this.state.subsArray} 
                         editRating={this.editRating}
                         />
+                        
                     </section>
                 </section>
             </div>

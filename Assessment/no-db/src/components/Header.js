@@ -4,8 +4,8 @@ function Header(){
     return(
             <div className="header">
                 <div className="headerInput">
-                    <input placeholder='  Search...'></input>
-                    <button>➤</button>
+                    {/* <input onChange={(e) => this.props.handleChange(e.target.value)} placeholder='  Search...'></input>
+                    <button>➤</button> */}
                 </div>
                 <div className="headerBox2And3">
                     <div className="headerBox2">
