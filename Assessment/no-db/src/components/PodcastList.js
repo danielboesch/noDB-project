@@ -111,11 +111,20 @@ class PodcastList extends Component {
 
                     <div className="mappedPodArrTitleDesc">
                     <br></br>
+                    <span className='podInfoBox'>
+                    <span className='podTitle'>
+
                     {pod.title}
-                    <br></br>
-                    {pod.description}
-                    <br></br>
-                    <button className="mappedPodButtons" onClick={() => this.subscribe(pod.image, pod.title, pod.rating, pod.description)}><b>Subscribe</b></button>
+                        </span>
+                        <br></br>
+                        <span className='podDesc'>
+                        <b>{pod.description}</b>
+                        </span>
+                        <br></br>
+                        <span className='podSubButton'>
+                        <button className="mappedPodButtons" onClick={() => this.subscribe(pod.image, pod.title, pod.rating, pod.description)}><b>Subscribe</b></button>
+                        </span>
+                    </span>
                     </div>
                     
                    

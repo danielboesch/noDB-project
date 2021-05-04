@@ -43,7 +43,9 @@ class Subscriptions extends Component {
 
                 return(
                     <div className="mappedSubArr">
+                        <span className="subTitle">
                     {sub.title}
+                        </span>
                     <br></br>
                     <img className="mappedSubImg" alt={sub.title} src={sub.image}></img>
                     <br></br>

@@ -23,14 +23,14 @@ class Genres extends Component {
 
         return(
             <div className="topics">
-                <h1>Genres</h1>
+                <h1 className="genreTitle">Genres</h1>
                 <button className="buttonReset" onClick={() => this.props.filterArray("reset")}><b>reset</b></button>
                 <br></br>
                 <button className="buttonGenre" onClick={() => this.props.filterArray("crime")}><b>Crime</b></button>
-                {/* <button><b>CRIME</b></button> */}
-                <button className="buttonGenre"><b>TOPIC</b></button>
-                <button className="buttonGenre"><b>TOPIC</b></button>
-                {/* <button><b>TOPIC</b></button> */}
+                <button className="buttonGenre" onClick={() => this.props.filterArray("pop culture")}><b>Pop Culture</b></button>
+                <button className="buttonGenre" onClick={() => this.props.filterArray("news")}><b>News</b></button>
+                <button className="buttonGenre" onClick={() => this.props.filterArray("lifestyle")}><b>Lifestyle</b></button>
+
 
             </div>
         )

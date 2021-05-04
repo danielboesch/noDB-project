@@ -171,6 +171,8 @@ h1{
 .headerBox3 > img {
   border-radius: 50%;
   width: 150%;
+  height: auto;
+  box-shadow: none;
   
 }
 
@@ -197,6 +199,8 @@ footer {
 
 img {
   width: 100px;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.308) 1px 1px 5px;
 }
 
 .outerBox {
@@ -213,7 +217,7 @@ img {
 .genres {
   background-color: rgb(255, 150, 138);
   display: flex;
-  height: 320px;
+  height: 340px;
   width: 170px;
   justify-content: center;
   border: rgb(55, 55, 55) 5px solid;
@@ -221,6 +225,12 @@ img {
   border-radius: 10px;
   margin-bottom: 50px;
 }
+
+.genreTitle {
+  margin-top: -1px;
+  padding-top: 13px;
+}
+
 
 .buttonReset {
   margin-top: -15px;
@@ -315,14 +325,46 @@ img {
   margin-right: 15px;
   padding: 10px;
   background-color: white;
-  width: 85%;
+  width: 210px;
+  height: 100px;
   /* height: 255px; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-start;
   box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 5px;
 }
 
+.podTitle {
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  display: flex;
+  margin-top: -15px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5px;
+  /* background-color:rgba(255, 140, 0, 0.849); */
+  /* width: 100px; */
+}
 
+.subTitle {
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: black 2px solid;
+}
+.podDesc {
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  display: flex;
+  margin-top: -15px;
+  font-size: 15px;
+  margin-left: 5px;
+  /* background-color:aqua; */
+}
+.podSubButton {
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  display: flex;
+  margin-top: -10px;
+  margin-left: 5px;
+}
 
 
 .mappedSubArr {
@@ -353,7 +395,8 @@ img {
   font-family: 'momcake';
   font-size: 20px;
   background: rgb(253, 127, 169);
-  color: white
+  color: white;
+  /* margin-bottom: 25px; */
 
 
   
@@ -400,3 +443,12 @@ img {
   
 }
 
+/* .podInfoBox {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+} */
